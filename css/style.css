@@ -6,6 +6,7 @@
 
   --color-border: rgb(212, 212, 212);
 }
+
 * {
   margin: 0;
 }
@@ -16,6 +17,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.wrap {
+  position: relative;
+  min-height: 100%;
 }
 
 .content {
@@ -217,14 +223,14 @@ body {
   font-size: 10px;
 }
 .text2 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 
 footer {
   margin-top: auto;
   position: absolute;
-  bottom: 0;
+  bottom: 20;
   left: 0;
   right: 0;
   display: flex;
