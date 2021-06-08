@@ -1,0 +1,284 @@
+:root {
+  --padding: 25px;
+  --font-size-large: 36px;
+  --font-size-medium: 16px;
+  --font-size-small: 12px;
+
+  --color-border: rgb(212, 212, 212);
+}
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 700px;
+  max-width: 876px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  margin-top: 80px;
+}
+.content .slider_img {
+  height: auto;
+}
+.content .slider_img .phonedisplay {
+  max-width: 454px;
+  height: 618px;
+}
+
+.get_Start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: var(--padding);
+  width: 350px;
+  height: 676px;
+}
+
+.get_Start .box_Login {
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.get_Start .box_Login .title {
+  font-size: var(--font-size-large);
+  font-family: "Courgette";
+  font-weight: 900;
+  color: rgb(24, 24, 24);
+  margin-bottom: calc(var(--padding) * 1.5);
+}
+.get_Start .box_Login .sub_title {
+  text-align: center;
+  font-size: 17px;
+  color: rgb(138, 138, 138);
+  font-weight: 550;
+}
+.get_Start .box_Login .txt_policy {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(138, 138, 138);
+}
+
+.get_Start .box_Login input {
+  width: 250px;
+  height: 35px;
+  border: 1px solid var(--color-border);
+  padding: 2px 5px;
+  margin-bottom: 7px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.get_Start .box_Login input:focus {
+  outline: none;
+}
+
+.get_Start .box_Login .btn_login,
+.btn_signup {
+  width: 260px;
+  height: 30px;
+  margin: 10px;
+  color: white;
+  background-color: powderblue;
+  font-size: 13px;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.box_Login > .btn_fb_login {
+  width: 260px;
+  height: 30px;
+  margin: 10px;
+  color: white;
+  background-color: rgb(59, 159, 252);
+  font-size: 13px;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.box_Login > .btn_fb_login > .link_to_fb {
+  color: white;
+  font-size: 14px;
+}
+
+/*라인 안에 글자넣기*/
+.line_break {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 12px;
+  margin: 8px 0px;
+  width: 270px;
+  font-size: var(--font-size-medium);
+  font-weight: bold;
+}
+.line_break::before,
+.line_break::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 10px;
+}
+
+.get_Start .box_Login a {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin-top: 10px;
+}
+.get_Start > .box_Login > .link_to_fb {
+  color: rgb(47, 78, 168);
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.get_Start .box_Login .link_find_pw {
+  font-size: var(--font-size-small);
+}
+
+.get_Start .box_SignUp {
+  margin: 10px 0;
+  padding: var(--padding);
+  display: flex;
+
+  border: 1px solid var(--color-border);
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.get_Start .box_SignUp .link_to_singup,
+.get_Start .box_SignUp .link_to_login {
+  text-decoration: none;
+  color: dodgerblue;
+  font-weight: 550;
+  margin-left: 5px;
+}
+
+.get_Start .box_Appdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get_Start .box_Appdown div {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.get_Start .box_Appdown .applist {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 5px;
+  justify-content: center;
+}
+.get_Start .box_Appdown .applist li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  padding: 3px 5px;
+  background-color: black;
+  border-radius: 5px;
+  width: 125px;
+  color: white;
+}
+.get_Start .box_Appdown .applist li div i {
+  font-size: 26px;
+}
+.get_Start .box_Appdown .applist li div div {
+  display: flex;
+  margin-left: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text1 {
+  font-size: 10px;
+}
+.text2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+footer {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  padding: 0 50px;
+}
+.links li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: gray;
+  margin-left: 10px;
+}
+footer .footers {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 50px;
+
+  margin-top: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  color: gray;
+}
+footer .footers select {
+  width: 70px;
+  font-size: 12px;
+  border: 0;
+  color: gray;
+}
+@media screen and (max-width: 877px) {
+  .content .slider_img {
+    display: none;
+  }
+  .content .get_Start {
+    min-width: 380px;
+  }
+  .get_Start .box_Login,
+  .get_Start .box_SignUp {
+    border: 0;
+  }
+  .content {
+    align-items: flex-start;
+  }
+
+  .get_Start {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    align-content: center;
+  }
+}
