@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+body span {
+  display: block;
+}
+
 input:focus {
   outline: none;
 }
@@ -92,9 +96,20 @@ contents
 .cont_wrap .Leftside_followers .list_followers {
   list-style: none;
   display: flex;
+  padding: 3px;
+  margin: 0 5px;
 }
 .list_followers li {
   margin: 0 10px;
+}
+.followerPortrait {
+  display: flex;
+  justify-content: center;
+}
+.cont_wrap .Leftside_followers .list_followers li .followerPortrait img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
 }
 
 .cont_wrap .Leftside_album {
@@ -109,10 +124,41 @@ contents
 .cont_wrap .Leftside_album .authorInfo {
   height: 26px;
   padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.authorInfo .author {
+  display: flex;
+  align-items: center;
+}
+
+.authorInfo .author .followerPortrait img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.authorInfo .author .followerID {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 5px;
+  color: rgb(75, 75, 75);
+}
+
+.authorInfo .author .interactionButton i {
+  font-size: 10px;
+  color: rgb(75, 75, 75);
+}
+
 .cont_wrap .Leftside_album .imageSlide img {
   max-width: 620px;
   height: calc(width * 1.5px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .cont_wrap .Leftside_album .reactionBar {
   margin: 4px 0;
@@ -156,15 +202,110 @@ contents
 .followerID {
   font-weight: 900;
 }
+
+.albumInfo .followerCommentbox {
+  margin-top: 5px;
+}
+
+.albumInfo .followerCommentbox .followerComment {
+  width: 500px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .box_comment .viewAllcomments {
+  margin-top: 5px;
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
   color: gray;
 }
+.box_comment .uploadtime {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  color: gray;
+}
+.addComment {
+  margin-top: 10px;
+  height: 56px;
+  padding: 0 16px;
+  border: 1px solid rgb(230, 230, 230);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addComment .emoticon {
+  font-size: 23px;
+}
+.addComment .mytextarea input {
+  margin-top: 5px;
+  border: 0;
+  width: 514px;
+}
+
+.addComment .commentPost {
+  text-decoration: none;
+  color: dodgerblue;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 .cont_wrap .cont_Rightside {
   width: 300px;
   max-width: 320px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.cont_wrap .cont_Rightside .my_accountbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont_wrap .cont_Rightside .my_accountbox .my_portrait {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  border: 1px solid rgb(230, 230, 230);
+}
+.cont_wrap .cont_Rightside .my_accountbox .account {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.my_accountbox .account .my_accountID {
+  font-size: 12px;
+  font-weight: 900;
+}
+.my_accountbox .account .name {
+  font-size: 14px;
+  color: rgb(100, 100, 100);
+}
+.my_accountbox .switch {
+  font-size: 12px;
+  font-weight: 900;
+  color: dodgerblue;
+}
+
+.cont_wrap .cont_Rightside .suggestions_box {
+  margin-top: 10px;
+}
+
+.cont_wrap .cont_Rightside .suggestions_box .suggestionTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.suggestions_box .suggestionTitle .text {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(100, 100, 100);
+}
+.suggestions_box .suggestionTitle .bt_seeall {
 }
 
 @media screen and (max-width: 500px) {
