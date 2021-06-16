@@ -1,0 +1,174 @@
+:root {
+  --padding: 25px;
+  --font-size-large: 36px;
+  --font-size-medium: 16px;
+  --font-size-small: 12px;
+
+  --color-border: rgb(212, 212, 212);
+  --color_background: rgb(250, 250, 250);
+}
+
+* {
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*
+Nav
+*/
+.cont_nav {
+  height: 54px;
+  position: sticky;
+  top: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.cont_nav .cont_title {
+  min-width: 180px;
+  font-size: 25px;
+  font-family: "Courgette";
+  font-weight: 900;
+  margin-left: 20px;
+}
+
+.cont_nav .cont_searchbar {
+  height: 28px;
+  width: 215px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color_background);
+}
+.cont_nav .cont_searchbar::-webkit-input-placeholder {
+  font-family: FontAwesome;
+  font-weight: 500;
+  overflow: visible;
+  vertical-align: top;
+  text-align: center;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  font-size: var(--font-size-small);
+  color: rgb(173, 173, 173);
+}
+
+.cont_nav .cont_searchbar:focus::-webkit-input-placeholder {
+  text-align: left;
+}
+.cont_nav .cont_links {
+  font-size: 25px;
+  min-width: 222px;
+}
+.cont_nav .cont_links i {
+  margin: 0 5px;
+}
+
+/*
+contents
+*/
+.cont_wrap {
+  height: 100vh;
+  background-color: var(--color_background);
+
+  padding: 30px 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.cont_wrap .Leftside_followers {
+  height: 84px;
+  background-color: white;
+  padding: 16px 0;
+  border: 1px solid rgb(230, 230, 230);
+}
+.cont_wrap .Leftside_followers .list_followers {
+  list-style: none;
+  display: flex;
+}
+.list_followers li {
+  margin: 0 10px;
+}
+
+.cont_wrap .Leftside_album {
+  width: 100%;
+  max-width: 620px;
+  background-color: white;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 14px 0;
+  border-radius: 5px;
+}
+
+.cont_wrap .Leftside_album .authorInfo {
+  height: 26px;
+  padding: 16px;
+}
+.cont_wrap .Leftside_album .imageSlide img {
+  max-width: 620px;
+  height: calc(width * 1.5px);
+}
+.cont_wrap .Leftside_album .reactionBar {
+  margin: 4px 0;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.cont_wrap .Leftside_album .reactionBar .reactionButtons {
+  display: flex;
+}
+.cont_wrap .Leftside_album .reactionBar .reactionButtons i {
+  padding: 8px;
+  margin: 0 2px;
+}
+
+.cont_wrap .Leftside_album .box_comment {
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.cont_wrap .Leftside_album .count_view {
+  font-family: "Rubik";
+  font-weight: 800;
+  font-size: 14px;
+}
+.cont_wrap .Leftside_album .count_like {
+  margin: 5px 0;
+  display: flex;
+}
+.cont_wrap .Leftside_album .count_like .LikedfollowerPortrait img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin: 0 4px;
+}
+.LikedfollowerID,
+.count_like_number,
+.autorID,
+.followerID {
+  font-weight: 900;
+}
+.box_comment .viewAllcomments {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
+}
+.cont_wrap .cont_Rightside {
+  width: 300px;
+  max-width: 320px;
+}
+
+@media screen and (max-width: 500px) {
+  .cont_nav .cont_searchbar {
+    display: none;
+  }
+}
