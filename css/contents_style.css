@@ -279,12 +279,12 @@ contents
   justify-content: center;
 }
 .my_accountbox .account .my_accountID {
-  font-size: 12px;
-  font-weight: 900;
+  font-size: 14px;
+  font-weight: 800;
 }
 .my_accountbox .account .name {
   font-size: 14px;
-  color: rgb(100, 100, 100);
+  color: rgb(150, 150, 150);
 }
 .my_accountbox .switch {
   font-size: 12px;
@@ -293,23 +293,114 @@ contents
 }
 
 .cont_wrap .cont_Rightside .suggestions_box {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .cont_wrap .cont_Rightside .suggestions_box .suggestionTitle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .suggestions_box .suggestionTitle .text {
   font-size: 14px;
   font-weight: 600;
-  color: rgb(100, 100, 100);
+  color: rgb(150, 150, 150);
 }
 .suggestions_box .suggestionTitle .bt_seeall {
+  font-size: 12px;
+}
+
+.suggestionLists_box .suggestionList {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.suggestionLists_box .suggestionList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.suggestionLists_box .suggestionList li .sug_portrait {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 2px solid rgb(255, 59, 102);
+  padding: 2px;
+}
+
+.suggestionLists_box .suggestionList li .sug_info_box {
+  padding: 0 5px;
+  width: 201px;
+}
+.suggestionLists_box .suggestionList li .sug_info_box .sug_id {
+  font-size: 13px;
+  font-weight: 600;
+}
+.suggestionLists_box .suggestionList li .sug_info_box .sug_info {
+  font-size: 12px;
+  color: rgb(150, 150, 150);
+}
+
+.suggestionLists_box .suggestionList li .link_follow {
+  font-size: 12px;
+  font-weight: 900;
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: auto;
+  position: absolute;
+  bottom: 20;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  padding: 0 50px;
+}
+.links li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+  margin-left: 10px;
+}
+footer .footers {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 50px;
+
+  margin-top: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  color: gray;
+}
+footer .footers select {
+  width: 70px;
+  font-size: 12px;
+  border: 0;
+  color: gray;
 }
 
 @media screen and (max-width: 500px) {
   .cont_nav .cont_searchbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 999px) {
+  .cont_Rightside {
     display: none;
   }
 }
