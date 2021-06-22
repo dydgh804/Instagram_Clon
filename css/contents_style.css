@@ -87,6 +87,10 @@ contents
   justify-content: center;
 }
 
+.cont_wrap .cont_Leftside {
+  max-width: 600px;
+}
+
 .cont_wrap .Leftside_followers {
   height: 84px;
   background-color: white;
@@ -114,7 +118,6 @@ contents
 
 .cont_wrap .Leftside_album {
   width: 100%;
-  max-width: 620px;
   background-color: white;
   border: 1px solid rgb(230, 230, 230);
   margin: 14px 0;
@@ -402,5 +405,8 @@ footer .footers select {
 @media screen and (max-width: 999px) {
   .cont_Rightside {
     display: none;
+  }
+  .cont_wrap .cont_Leftside {
+    width: 100%;
   }
 }
