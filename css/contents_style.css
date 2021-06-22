@@ -36,7 +36,7 @@ Nav
 }
 
 .cont_nav .cont_title {
-  min-width: 180px;
+  max-width: 180px;
   font-size: 25px;
   font-family: "Courgette";
   font-weight: 900;
@@ -68,7 +68,7 @@ Nav
 }
 .cont_nav .cont_links {
   font-size: 25px;
-  min-width: 222px;
+  max-width: 222px;
 }
 .cont_nav .cont_links i {
   margin: 0 5px;
@@ -211,7 +211,7 @@ contents
 }
 
 .albumInfo .followerCommentbox .followerComment {
-  width: 500px;
+  width: 100%;
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -401,6 +401,21 @@ footer .footers .copyright {
 @media screen and (max-width: 500px) {
   .cont_nav .cont_searchbar {
     display: none;
+  }
+  body {
+    width: 100%;
+  }
+  .cont_nav .cont_title {
+    max-width: 160px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 10px;
+  }
+  .cont_nav .cont_links {
+    width: 198px;
+  }
+  .cont_nav .cont_links i {
+    margin: 0 2px;
   }
 }
 @media screen and (max-width: 999px) {
