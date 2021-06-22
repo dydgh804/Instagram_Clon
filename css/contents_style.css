@@ -405,6 +405,11 @@ footer .footers .copyright {
   body {
     width: 100%;
   }
+  .cont_nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
   .cont_nav .cont_title {
     max-width: 160px;
     font-size: 20px;
