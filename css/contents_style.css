@@ -88,7 +88,7 @@ contents
 }
 
 .cont_wrap .cont_Leftside {
-  max-width: 600px;
+  width: 600px;
 }
 
 .cont_wrap .Leftside_followers {
@@ -248,7 +248,7 @@ contents
 .addComment .mytextarea input {
   margin-top: 5px;
   border: 0;
-  width: 514px;
+  width: 494px;
 }
 
 .addComment .commentPost {
