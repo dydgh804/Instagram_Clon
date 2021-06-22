@@ -78,7 +78,8 @@ Nav
 contents
 */
 .cont_wrap {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   background-color: var(--color_background);
 
   padding: 30px 0;
@@ -414,7 +415,7 @@ footer .footers .copyright {
     max-width: 160px;
     font-size: 20px;
     font-weight: 900;
-    margin-left: 10px;
+    margin-left: 10;
   }
   .cont_nav .cont_links {
     width: 198px;
